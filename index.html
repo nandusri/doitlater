@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>To-Do</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+<body>
+	<header>
+		<div class="container-fluid ">
+			<div class="container">
+				    <div class="input-group input-task">
+				      <input type="text" class="form-control" id = "task" placeholder="What to do next?">
+				      <span class="input-group-btn">
+				        <button class="btn btn-primary" type="submit" id="add" >Add Task</button>
+				      </span>
+				    </div><!-- /input-group -->
+			</div>
+		</div>
+	</header>
+	<div class="container-fluid task-container">
+		<div class="row ">
+			<div class="col-md-5 col-sm-12 col-xs-12   uncompleted">
+				<ul class="todo" id="todo"></ul>
+			</div>
+			<div class="col-md-5 col-sm-12 col-xs-12  completed">
+				<ul class="todo" id="completed"></ul>
+			</div>
+
+		</div>
+	</div>
+
+	<script type="text/javascript" src = "js/todo.js"></script>
+</body>
+</html>

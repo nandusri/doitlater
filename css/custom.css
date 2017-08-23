@@ -1,0 +1,297 @@
+body{
+
+	background: #fafafa;
+
+}
+
+header{
+margin-top: 1%;	
+background-color: #0099CC;
+
+width: 100%;
+
+height: 80px;
+
+border-bottom: 1px solid #ddd;
+
+ box-shadow: 0 3px 2px -2px rgba(200,200,200,0.2);
+
+ box-shadow: 6px 6px 6px 6px lightgrey;
+
+ border-bottom-left-radius: 40px;
+ border-bottom-right-radius: 40px;
+
+    position: fixed;
+    z-index: 2;
+}
+
+
+.input-task{
+	
+	width: 100%;
+
+	padding: 10px;
+
+	}
+
+
+.input-task button{
+
+	line-height: 2.6;
+
+	}
+
+
+.form-control{
+
+	height: 50px;
+
+	}
+
+
+.main{
+
+	padding: 10px;
+            }
+
+
+.task-container{
+
+	margin-left: 10%;
+
+	}
+
+
+.uncompleted,.completed{
+
+	margin-top: 100px;
+
+	min-height: 550px;
+
+	padding: 0;
+
+	background-color: transparent;
+	border:0px 0px 5px 0px #0099CC;
+
+	}
+
+.uncompleted{
+	margin-right: 2%;
+
+
+	}
+
+ul.todo{
+	
+list-style-type: none;
+	
+width: 100%;
+
+	float: left;
+	
+padding: 0;
+
+}
+
+ul.todo#todo:empty:before{
+
+	content: 'You have nothing todo';
+	text-shadow: 5px 2px 3px #0099CC;
+	font-family: Gabriola;
+	font-size: 30px;
+	color: blue;
+}
+
+ul.todo#completed:empty:before{
+	
+content: 'No task is completed yet';
+font-family: Gabriola;
+text-shadow: 5px 2px 3px #0099CC;
+font-size: 30px;
+color: blue;
+}
+
+
+ul.todo#todo:not(:empty):before{
+	content: 'Todo Tasks';
+	text-shadow: 5px 2px 3px #0099CC;
+	font-family: Gabriola;
+	font-size: 30px;
+	color: blue;
+}
+
+
+ul.todo#completed:not(:empty):before{
+	
+content: 'Completed Tasks';
+font-family: Gabriola;
+text-shadow: 5px 2px 3px #0099CC;
+font-size: 30px;
+color: blue;
+}
+
+
+ul.todo#todo:before,ul.todo#completed:before{
+
+	display: block;
+	
+width: 100%;
+	
+text-align: center;
+
+	font-size: 25px;
+
+	color:black;
+}
+
+
+ul.todo li{
+
+	width: 100%;
+	
+min-height: 50px;
+	
+float: left;
+
+	background: #fff;
+
+	border:2px solid blue;
+	
+border-radius: 5px;
+	
+/*box-shadow: 2px 3px 4px rgba(44,62,80,0.10);*/
+	
+box-shadow:1px 1px 0 #f7f7f7;
+
+	margin-bottom: 10px;
+
+	padding: 10px 0 10px 5px;
+}
+
+
+ul.todo li:last-of-type{
+	margin-bottom: 0;
+}
+
+
+ul.todo div.row{
+	
+width: 100%;
+
+	min-height: 100%;
+
+	margin: 0;
+}
+
+
+ul.todo div.row div.task{
+	
+padding-right: 10px;
+
+	min-height: 100%;
+
+	font-size: 18px;
+}
+
+div.uncompleted ul.todo div.row a{
+	
+text-decoration: none;
+	
+float: right;
+
+	font-size: 20px;
+
+	padding-right: 10px;
+	
+color: grey;
+}
+
+
+
+div.uncompleted ul.todo div.row a.check{
+
+	color:grey;
+}
+
+div.uncompleted ul.todo div.row a.check:hover{
+
+	color:#5cb85c;
+}
+
+div.uncompleted ul.todo div.row a.trash:hover{
+	
+	color:#d9534f;
+}
+
+
+
+div.completed ul.todo div.row a{
+
+	text-decoration: none;
+
+	float: right;
+
+	font-size: 20px;
+
+	padding-right: 10px;
+	
+color: grey;
+}
+
+
+div.completed ul.todo div.row a.check{
+	
+	color:#5cb85c;
+}
+
+div.completed ul.todo div.row a.check:hover{
+
+	color:grey;
+}
+
+div.completed ul.todo div.row a.trash:hover{
+
+	color:#d9534f;
+}
+
+
+@media(max-width: 480px){
+	.task-container{
+		margin-left: 0;
+	}
+	.uncompleted,.completed{
+		min-he6ight: 250px;
+	}
+	.uncompleted{
+		margin-bottom: 2%;
+	}
+}
+@media (max-width: 767px){
+	.task-container{
+		margin-left: 0;
+	}
+	.uncompleted,.completed{
+		min-height: 250px;
+	}
+	.uncompleted{
+		margin-bottom:2%;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px){
+	.task-container{
+		margin-left: 0;
+	}
+	.uncompleted,.completed{
+		min-height: 250px;
+	}
+	.uncompleted{
+		margin-bottom: 2%;
+	}
+}
+.box{
+	border: 2px solid #0099CC;
+	background-color: ;
+	 box-shadow: 10px 10px 10px 10px black;
+
+ 
+}
